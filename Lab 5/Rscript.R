@@ -7,8 +7,10 @@ plotresult <- function(file, start = 1){
 }
 
 system("java -cp bin sorter.Lab infil.txt utfil.txt 600")
-plotresult("utfil.txt")
+plotresult("resources/utfil.txt", 200)
 
 pdf("result1.pdf")
-plotresult("utfil.txt")
+plotresult("resources/utfil.txt", 200)
+#plot(data, typ = 'l')
+
 dev.off()
